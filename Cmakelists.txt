@@ -1,0 +1,11 @@
+Driving Profiles
+Full Acceleration: 0→100 km/h
+
+Emergency Braking: 100→0 km/h
+
+Cruise Control: Constant 80 km/h
+
+Mixed Profile: Accel → Cruise → Brake
+
+Output
+Generates data/simulation_results.csv:
