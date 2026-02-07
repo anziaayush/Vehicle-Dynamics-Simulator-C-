@@ -1,0 +1,8 @@
+build/
+├─ CMakeCache.txt                 # CMake configuration cache
+├─ CMakeFiles/                    # Temporary CMake files (ignored by git)
+│  └─ ... (lots of temp files)
+├─ cmake_install.cmake            # Install script
+├─ vehicle_sim                    # ✅ EXECUTABLE (Linux/Mac)
+│  or vehicle_sim.exe            # ✅ EXECUTABLE (Windows)
+└─ Makefile                       # Generated makefile
