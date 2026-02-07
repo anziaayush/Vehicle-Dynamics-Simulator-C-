@@ -1,11 +1,18 @@
-Driving Profiles
-Full Acceleration: 0→100 km/h
 
-Emergency Braking: 100→0 km/h
+### CMakeLists.txt
+```cmake
+cmake_minimum_required(VERSION 3.16)
+project(VehicleDynamics LANGUAGES CXX)
 
-Cruise Control: Constant 80 km/h
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-Mixed Profile: Accel → Cruise → Brake
+add_executable(vehicle_sim
+    src/main.cpp
+    src/vehicle.cpp
+)
 
-Output
-Generates data/simulation_results.csv:
+target_include_directories(vehicle_sim PRIVATE src/)
+
+
+
