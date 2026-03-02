@@ -1,0 +1,36 @@
+The core idea in simple words
+
+We only care about longitudinal motion:
+
+1.Position 
+x(t): where the car is on a straight road
+
+2.Velocity 
+v(t): how fast the car is moving
+
+3.Acceleration 
+a(t): how quickly the speed changes
+
+These three are linked by very simple update rules in small time steps Δt:
+v_new = v_old+a ⋅ Δt
+x_new = x_old +v_new ⋅ Δt
+Acceleration comes from forces using Newton’s law:
+F=m⋅a → a=F/m
+
+Forces we use:
+
+-Engine force (pushes forward)
+-Brake force (pushes backward)
+-Drag force (air resistance, always opposite to motion)
+-Rolling resistance (friction with the road)
+
+So:
+
+-Acceleration phase: Engine force is large, brakes = 0
+-Braking phase: Engine = 0, brake force large negative
+-Cruise: Engine force adjusted to keep almost constant speed
+-You simulate this by looping over time and updating position and speed each small step.
+
+
+
+
