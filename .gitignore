@@ -1,0 +1,11 @@
+# Compiled output
+src/output/
+
+# Mac junk
+.DS_Store
+
+# Debug symbols
+*.dSYM/
+
+# VS Code (optional - remove this if you want tasks.json on GitHub)
+# .vscode/

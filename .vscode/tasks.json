@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Vehicle Simulator",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-g3",
+        "${workspaceFolder}/src/Main.cpp",
+        "${workspaceFolder}/src/Vehicle.cpp",
+        "-o",
+        "${workspaceFolder}/src/output/Vehicle"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run Vehicle Simulator",
+      "type": "shell",
+      "command": "${workspaceFolder}/src/output/Vehicle",
+      "dependsOn": "Build Vehicle Simulator",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

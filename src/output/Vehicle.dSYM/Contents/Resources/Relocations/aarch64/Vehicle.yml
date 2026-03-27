@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/aayushanzi/projects/Vehicle-Dynamics-Simulator-C-/src/output/Vehicle'
+relocations:     []
+...
